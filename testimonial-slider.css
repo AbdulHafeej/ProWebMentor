@@ -2,7 +2,7 @@
    :root {
        --container-width-desk:40em;
        --container-width-tab:82vw;
-       --container-width-mob:94vw;
+       --container-width-mob:88vw;
        --heading-color: #1A1A1A;
        --bg-color:#F3F3F3;
        --name-font-size-desk:1.2em;
@@ -27,6 +27,7 @@
     }
     
     
+ 
     .swiper-pagination-bullet {
         background:var(--swiper-pagination-bullet-inactive-color);
         opacity:var(--swiper-pagination-bullet-inactive-opacity);
@@ -72,7 +73,7 @@
     }
     
     
-     .elementor-widget-container .testimonial .head{
+    .elementor-widget-container .testimonial .head{
         display:flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -108,6 +109,7 @@
         line-height: 0.5;
     }
     
+
     .elementor-widget-container .testimonial .head .profile-area .info{
         display:flex;
         flex-direction: column;
@@ -153,7 +155,8 @@
     }
     
     
-         /*Shrinking for Tablet devices*/ 
+    
+     /*Shrinking for Tablet devices*/ 
     @media (min-width: 481px) and (max-width: 768px) { 
         .elementor-widget-container .container{
         grid-template-columns:1fr;
@@ -193,4 +196,15 @@
         line-height: 1.5;
     }
 }
+
+    /*Shrinking for small Mobile devices*/ 
+@media (max-width: 350px) {
+    .elementor-widget-container .testimonial .head .stars span{
+        font-size: 0.7em;
+    }
     
+    .elementor-widget-container .testimonial .head .profile-area .info small {
+        line-height: 1;
+    }
+}
+ 
